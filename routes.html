@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESTful Routes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="jumbotron">
+	  <div class="container">
+	    <h1>RESTful Routes</h1>
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<tr>
+					<th>Name</th>
+					<th>Path</th>
+					<th>Action</th>
+					<th>Purpose</th>
+				</tr>
+				<tr class="active">
+					<td>Index</td>
+					<td>/books</td>
+					<td>GET</td>
+					<td>Show all of an entity</td>
+				</tr>
+				<tr class="info">
+					<td>Show</td>
+					<td>/books/:id</td>
+					<td>GET</td>
+					<td>Show a single instance of an entity</td>
+				</tr>
+				<tr class="success">
+					<td>New</td>
+					<td>/books/new</td>
+					<td>GET</td>
+					<td>Show the form to create a new entity</td>
+				</tr>
+				<tr class="success">
+					<td>Create</td>
+					<td>/books</td>
+					<td>PUSH</td>
+					<td>Create a new entity, redirect somewhere after entity has been created</td>
+				</tr>
+				<tr class="warning">
+					<td>Edit</td>
+					<td>/books/:id/edit</td>
+					<td>GET</td>
+					<td>Show the form to edit an existing entity</td>
+				</tr>
+				<tr class="warning">
+					<td>Update</td>
+					<td>/books/:id</td>
+					<td>PUT</td>
+					<td>Make changes to an existing entity, redirect after changes made</td>
+				</tr>
+				<tr class="danger">
+					<td>Delete</td>
+					<td>/books/:id</td>
+					<td>DELETE</td>
+					<td>Delete an existing entity, redirect somewhere else</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
